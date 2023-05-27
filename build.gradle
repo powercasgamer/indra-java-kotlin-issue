@@ -1,0 +1,19 @@
+plugins {
+    id("net.kyori.indra.publishing") version "3.1.1"
+    id("net.kyori.indra") version "3.1.1"
+    id("org.jetbrains.kotlin.jvm") version "1.8.21"
+}
+
+group("net.deltapvp")
+version("1.0-SNAPSHOT")
+
+repositories {
+    mavenCentral()
+}
+
+indra {
+    javaVersions {
+        target(11)
+        minimumToolchain(11)
+    }
+}
